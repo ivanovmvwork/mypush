@@ -1,8 +1,4 @@
 firebase.initializeApp({
-    apiKey: "AAAA7WbAOa4:APA91bEpLLmlQJ2MJn8dT9kx9Rlu0_IxsKQ545qDQe1EHWoEwWYcF4fS9QcfSfByu-3wZivsNn9FHux3ccMAQ04aSA36-TMKG5zbYOcIIx1xuESMSEvIsOrrCbwiSJE2M3hu3Jme2n7M",
-	authDomain: "mypush-f113a.firebaseapp.com",
-	databaseURL: "https://mypush-f113a.firebaseio.com",
-	storageBucket: "gs://mypush-f113a.appspot.com",
     messagingSenderId: '1019631122862'
 });
 
@@ -101,7 +97,7 @@ if (
         ;
 
         // register fake ServiceWorker for show notification on mobile devices
-        navigator.serviceWorker.register('/serviceworker/firebase-messaging-sw.js');
+        navigator.serviceWorker.register('/firebase-messaging-sw.js');
         Notification.requestPermission(function(permission) {
             if (permission === 'granted') {
                 navigator.serviceWorker.ready.then(function(registration) {
