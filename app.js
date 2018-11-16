@@ -45,7 +45,7 @@ if (
     var messaging = firebase.messaging();
 
     // already granted
-    if (Notification.permission === 'granted') {
+    if (Notification.permission !== 'granted') {
         getToken();
     }
 
