@@ -97,7 +97,7 @@ if (
         ;
 
         // register fake ServiceWorker for show notification on mobile devices
-        navigator.serviceWorker.register('/firebase-messaging-sw.js');
+        navigator.serviceWorker.register('/serviceworker/firebase-messaging-sw.js');
         Notification.requestPermission(function(permission) {
             if (permission === 'granted') {
                 navigator.serviceWorker.ready.then(function(registration) {
@@ -154,8 +154,7 @@ if (
 
 function getToken() {
     messaging.requestPermission()
-        .then(
-        function() {
+        .then(function() {
             // Get Instance ID token. Initially this makes a network call, once retrieved
             // subsequent calls to getToken will return from cache.
             messaging.getToken()
