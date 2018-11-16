@@ -45,7 +45,7 @@ if (
     var messaging = firebase.messaging();
 
     // already granted
-    if (Notification.permission !== 'granted') {
+    if (Notification.permission === 'granted') {
         getToken();
     }
 
@@ -153,9 +153,9 @@ if (
 
 
 function getToken() {
-    /*messaging.requestPermission()
+    messaging.requestPermission()
         .then(
-        function() {*/
+        function() {
             // Get Instance ID token. Initially this makes a network call, once retrieved
             // subsequent calls to getToken will return from cache.
             messaging.getToken()
@@ -175,10 +175,10 @@ function getToken() {
                     updateUIForPushPermissionRequired();
                     setTokenSentToServer(false);
                 });
-        /*})
+        })
         .catch(function(error) {
             showError('Unable to get permission to notify', error);
-        });*/
+        });
 }
 
 
