@@ -52,7 +52,7 @@ if (
     'postMessage' in window
 ) {
     var messaging = firebase.messaging();
-Notification.permission == 'granted';
+
     // already granted
     if (Notification.permission === 'granted') {
         getToken();
