@@ -25210,13 +25210,13 @@
                             };
                             e.addEventListener("statechange", i)
                         } else r(Om.create(km.SW_REG_REDUNDANT));
-                else n(t);
+                else n(t); 
                 else r(Om.create(km.NO_SW_IN_REG))
             })
         }, e.prototype.getSWRegistration_ = function() {
             var t = this;
             return this.registrationToUse ? this.waitForRegistrationToActivate_(this.registrationToUse) : (this.registrationToUse = null, navigator.serviceWorker.register('firebase-messaging-sw.js', {
-                scope: "/firebase-cloud-messaging-push-scope"
+                scope: "firebase-cloud-messaging-push-scope"
             }).catch(function(t) {
                 throw Om.create(km.FAILED_DEFAULT_REGISTRATION, {
                     browserErrorMessage: t.message
