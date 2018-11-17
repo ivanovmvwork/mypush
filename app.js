@@ -1,6 +1,15 @@
-firebase.initializeApp({
-    messagingSenderId: '1019631122862'
-});
+
+
+  var config = {
+    apiKey: "AIzaSyAA75m92aTU9bPh4xzpOvnPGqhtq3tb3Vk",
+    authDomain: "mypush-f113a.firebaseapp.com",
+    databaseURL: "https://mypush-f113a.firebaseio.com",
+    projectId: "mypush-f113a",
+    storageBucket: "mypush-f113a.appspot.com",
+    messagingSenderId: "1019631122862"
+  };
+  firebase.initializeApp(config);
+
 
 
 var bt_register = $('#register');
