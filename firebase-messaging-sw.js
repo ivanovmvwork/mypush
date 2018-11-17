@@ -3,11 +3,8 @@
 importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js');
 
 
-importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js');
-importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js');
-importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js');
 importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js');
-importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js');
+
 
 
   var config = {
