@@ -1,9 +1,25 @@
-importScripts('https://www.gstatic.com/firebasejs/3.7.2/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/3.7.2/firebase-messaging.js');
 
-firebase.initializeApp({
-  messagingSenderId: '1019631122862'
-});
+
+importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js);
+
+
+importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js);
+importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js);
+importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js);
+importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js);
+importScripts('https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js);
+
+
+  var config = {
+    apiKey: "AIzaSyAA75m92aTU9bPh4xzpOvnPGqhtq3tb3Vk",
+    authDomain: "mypush-f113a.firebaseapp.com",
+    databaseURL: "https://mypush-f113a.firebaseio.com",
+    projectId: "mypush-f113a",
+    storageBucket: "mypush-f113a.appspot.com",
+    messagingSenderId: "1019631122862"
+  };
+  firebase.initializeApp(config);
+
 
 const messaging = firebase.messaging();
 
