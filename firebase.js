@@ -1,4 +1,4 @@
-! function(t, e) {
+﻿! function(t, e) {
     "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : t.firebase = e()
 }(this, function() {
     "use strict";
@@ -25215,7 +25215,7 @@
             })
         }, e.prototype.getSWRegistration_ = function() {
             var t = this;
-            return this.registrationToUse ? this.waitForRegistrationToActivate_(this.registrationToUse) : (this.registrationToUse = null, navigator.serviceWorker.register("/mypush/firebase-messaging-sw.js", {
+            return this.registrationToUse ? this.waitForRegistrationToActivate_(this.registrationToUse) : (this.registrationToUse = null, navigator.serviceWorker.register("mypush/firebase-messaging-sw.js", {
                 scope: "/firebase-cloud-messaging-push-scope"
             }).catch(function(t) {
                 throw Om.create(km.FAILED_DEFAULT_REGISTRATION, {
