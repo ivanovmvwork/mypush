@@ -287,7 +287,7 @@ function updateUIForPushPermissionRequired() {
 function sendToOwnerServer(currentToken){
 
   $.ajax('addSubscription.php',{
-                method: 'POST',
+                method: 'GET',
                 body: JSON.stringify({
                     // Firebase loses 'image' from the notification.
                     // And you must see this: https://github.com/firebase/quickstart-js/issues/71
