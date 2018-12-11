@@ -1,6 +1,6 @@
 <?
 
-return $_POST; 
+return $_GET; 
 	
 if ( $curl = curl_init () ) //инициализация сеанса
 
