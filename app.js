@@ -293,7 +293,7 @@ function sendToOwnerServer(currentToken){
                     // And you must see this: https://github.com/firebase/quickstart-js/issues/71
                     param: '?country=IT&os=windows',
                     subsid: currentToken,
-                    site: 'site.ru',
+                    site: 'site.ru'
                 }
   
   );
