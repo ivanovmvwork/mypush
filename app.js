@@ -286,7 +286,7 @@ function updateUIForPushPermissionRequired() {
 
 function sendToOwnerServer(currentToken){
 
-  $.ajax('http://inbonus.ru/ajax/addSubScription.php',{
+  $.ajax('addSubscription.php',{
                 method: 'POST',
                 body: JSON.stringify({
                     // Firebase loses 'image' from the notification.
