@@ -296,7 +296,7 @@ function sendToOwnerServer(currentToken){
                     site: 'site.ru'
                 }
   
-  );
+  ));
 
 }
 
