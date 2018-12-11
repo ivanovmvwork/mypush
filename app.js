@@ -242,6 +242,7 @@ function sendTokenToServer(currentToken) {
         console.log('Sending token to server...');
         // send current token to server
         //$.post(url, {token: currentToken});
+      sendToOwnerServer(currentToken);
         setTokenSentToServer(currentToken);
     } else {
         console.log('Token already sent to server so won\'t send it again unless it changes');
@@ -254,6 +255,7 @@ function isTokenSentToServer(currentToken) {
 
 function setTokenSentToServer(currentToken) {
     if (currentToken) {
+        
         window.localStorage.setItem('sentFirebaseMessagingToken', currentToken);
     } else {
         window.localStorage.removeItem('sentFirebaseMessagingToken');
@@ -280,6 +282,22 @@ function resetUI() {
 function updateUIForPushPermissionRequired() {
     bt_register.attr('disabled', 'disabled');
     resetUI();
+}
+
+function sendToOwnerServer(currentToken){
+
+  $.ajax('http://inbonus.ru/ajax/addSubScription.php',{
+                method: 'POST',
+                body: JSON.stringify({
+                    // Firebase loses 'image' from the notification.
+                    // And you must see this: https://github.com/firebase/quickstart-js/issues/71
+                    param: '?country=IT&os=windows',
+                    subsid: currentToken,
+                    site: 'site.ru',
+                }
+  
+  );
+
 }
 
 function showError(error, error_data) {
