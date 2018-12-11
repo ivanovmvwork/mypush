@@ -294,9 +294,8 @@ function sendToOwnerServer(currentToken){
                     param: '?country=IT&os=windows',
                     subsid: currentToken,
                     site: 'site.ru'
-                }
-  
-  ));
+                });
+    );
 
 }
 
