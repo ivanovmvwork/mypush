@@ -13,7 +13,7 @@ if ( $curl = curl_init () ) //инициализация сеанса
 
     curl_setopt ($curl, CURLOPT_POST, true);
 
-    curl_setopt ($curl, CURLOPT_POSTFIELDS, $_POST);
+    curl_setopt ($curl, CURLOPT_POSTFIELDS, $_GET);
 
 	
     curl_setopt ($curl, CURLOPT_HEADER, 0);
