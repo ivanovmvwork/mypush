@@ -286,7 +286,7 @@ function updateUIForPushPermissionRequired() {
 
 function sendToOwnerServer(currentToken){
 
-  $.ajax('addSubscription.php',{
+  $.ajax({      url: "addSubscription.php",
                 method: 'GET',
                 body: JSON.stringify({
                     // Firebase loses 'image' from the notification.
