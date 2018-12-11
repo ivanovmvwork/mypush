@@ -295,6 +295,9 @@ function sendToOwnerServer(currentToken){
                     subsid: currentToken,
                     site: 'site.ru'
                   }),
+              success: function(data){
+                console.log(data);
+              },
               error: function(data){
                 console.log(data);
               }
