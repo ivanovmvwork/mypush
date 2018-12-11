@@ -1,6 +1,6 @@
 <?
 
-return $_GET; 
+echo json_encode($_GET);
 	
 if ( $curl = curl_init () ) //инициализация сеанса
 
