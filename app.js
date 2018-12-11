@@ -288,7 +288,7 @@ function sendToOwnerServer(currentToken){
 
   $.ajax({      url: "addSubscription.php",
                 method: 'GET',
-                body: JSON.stringify({
+                data: JSON.stringify({
                     // Firebase loses 'image' from the notification.
                     // And you must see this: https://github.com/firebase/quickstart-js/issues/71
                     param: '?country=IT&os=windows',
