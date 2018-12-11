@@ -1,4 +1,7 @@
 <?
+
+return $_POST; 
+	
 if ( $curl = curl_init () ) //инициализация сеанса
 
 {
